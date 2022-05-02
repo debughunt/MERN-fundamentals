@@ -1,10 +1,7 @@
-Number.prototype.isPrime = function() {
+Number.prototype.isPrime = function(i = 2) {
         for( let i=2; i<this; i++ ) {
-            if( this % i === 0 ) {
-                return false;
-            }
+            return this % i === 0 ?  false : true;
         }
-        return true;
     }
 
     const { performance } = require('perf_hooks');
